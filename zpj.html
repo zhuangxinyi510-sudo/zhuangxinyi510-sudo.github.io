@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="个人作品集：展示设计、开发、研究、项目经历与联系方式。"
+    />
+    <title>zhuang的作品集</title>
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-logo" href="#top" aria-label="回到首页">zhuang</a>
+      <nav class="site-nav" id="siteNav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#works">作品</a>
+        <a href="#experience">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="切换深浅色">
+          <span class="theme-icon" aria-hidden="true"></span>
+        </button>
+        <button class="menu-button" id="menuToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-section" data-reveal>
+        <div class="page-shell hero-shell">
+          <div class="hero-copy">
+            <p class="section-kicker">Designer / Developer / Researcher</p>
+            <h1>zhuang的作品集</h1>
+            <p class="hero-lede">
+              我关注数字产品、交互体验、AIGC、建模、平面设计。现在，我在学习数字空间与采集，这里将展示我的作品和创作过程。
+            </p>
+            <div class="hero-actions">
+              <a class="button-primary" href="#works">查看作品</a>
+              <a class="button-secondary" href="#contact">联系我</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="作品集视觉预览">
+            <div class="portrait-panel">
+              <div class="portrait-placeholder">
+                <img src="./images/IMG_0950.JPG" alt="" />
+              </div>
+            </div>
+            <div class="floating-note note-top">UX / UI</div>
+            <div class="floating-note note-mid">Prototype</div>
+            <div class="floating-note note-bottom">Creative Tech</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-shell intro-section" id="about" data-reveal>
+        <p class="section-kicker">About</p>
+        <div class="intro-grid">
+          <h2>从问题研究、界面设计到前端实现，建立完整的创作闭环</h2>
+          <div class="intro-copy">
+            <p>
+              本人现在大二，还在继续学习中，作品集内容会持续更新。我的兴趣点包括数字产品设计、交互体验、AIGC、建模和视觉设计等领域。通过这个作品集，我希望展示我的创作过程、设计思路和技术能力，以及我对未来数字空间的探索和理解。
+            </p>
+            <div class="skill-list" aria-label="技能列表">
+              <span>Figma</span>
+              <span>SwiftUI</span>
+              <span>HTML/CSS</span>
+              <span>blender</span>
+              <span>AIGC</span>
+              <span>平面设计</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-shell works-section" id="works" data-reveal>
+        <div class="section-heading">
+          <p class="section-kicker">Selected Works</p>
+          <h2>精选作品</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-media media-one">
+              <img class="work-image-contain" src="./images/截屏2026-05-21 21.50.13.png" alt="记感树" />
+            </div>
+            <div class="work-body">
+              <p class="work-type">Webpage</p>
+              <h3>记感树</h3>
+              <p>
+                这是一个记录感想和故事的网站
+                <a href="http://47.120.6.5/group5-fullpage-framework.html" target="_blank" rel="noreferrer">
+                  查看项目
+                </a>
+              </p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-media media-two">
+              <img class="work-image-contain" src="./images/截屏2026-05-22 00.50.48.png" alt="AI视频制作画面" />
+            </div>
+            <div class="work-body">
+              <p class="work-type">AIGC / Creation</p>
+              <h3>AI视频制作</h3>
+              <p>简单的AI视频片段制作</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-media media-three">
+              <img class="work-image-contain" src="./images/IMG_2628.JPG" alt="泡泡玛特平面海报设计" />
+            </div>
+            <div class="work-body">
+              <p class="work-type">graphic/design</p>
+              <h3>泡泡玛特平面海报设计</h3>
+              <p>平面海报设计</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-media media-four">
+              <img class="work-image-contain" src="./images/5C144BD5-4DB9-4030-8036-517AC7D3F79B.jpeg" alt="敦煌彩塑信息可视化" />
+            </div>
+            <div class="work-body">
+              <p class="work-type">graphic/design</p>
+              <h3>敦煌彩塑信息可视化</h3>
+              <p>敦煌可视化设计</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-media tall-card media-five">
+              <img class="work-image-contain" src="./images/D2A4BFF8-AB7C-43FE-9702-98AA0DE1B77E.jpeg" alt="敦煌彩塑信息可视化 E" />
+            </div>
+            <div class="work-body">
+              <p class="work-type">3D Modeling / Digital Space</p>
+              <h3>敦煌彩塑信息可视化 E</h3>
+              <p>敦煌可视化设计</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-media tall-card media-six">
+              <img class="work-image-contain" src="./images/2C769ECE-743D-49F3-A735-CD9514B22B3F.jpeg" alt="段江华艺术家海报" />
+            </div>
+            <div class="work-body">
+              <p class="work-type">AIGC / Creative Experiment</p>
+              <h3>段江华艺术家海报</h3>
+              <p>平面海报设计</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-shell experience-section" id="experience" data-reveal>
+        <div class="section-heading">
+          <p class="section-kicker">Experience</p>
+          <h2>经历</h2>
+        </div>
+        <div class="timeline-list">
+          <article class="timeline-item">
+            <div>
+              <h3>学校 / 长沙师范学院</h3>
+              <p>专业方向/艺术与科技</p>
+            </div>
+            <time>2024 - 2028</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>徐特立数字展馆</h3>
+              <p>负责内容：设计、策划</p>
+            </div>
+            <time>2026</time>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>移动应用创新赛</h3>
+              <p>目前正在参加</p>
+            </div>
+            <time>2026</time>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="page-shell contact-section" id="contact" data-reveal>
+        <div class="contact-panel">
+          <p class="section-kicker">Contact</p>
+          <h2>有项目、合作或交流想法，可以从这里开始。</h2>
+          <div class="contact-actions">
+            <button class="copy-button" type="button" disabled>
+              邮箱待补充
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Personal Portfolio</span>
+      <span>Built for design, code, and research work.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
