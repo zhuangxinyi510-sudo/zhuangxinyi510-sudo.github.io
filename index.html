@@ -9,7 +9,12 @@
     />
     <title>zhuang的作品集</title>
     <script>
-      const savedTheme = localStorage.getItem("theme");
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem("theme");
+      } catch {
+        // Storage can be unavailable when the page is opened as a local file.
+      }
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
     </script>

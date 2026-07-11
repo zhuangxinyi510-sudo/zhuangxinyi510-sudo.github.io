@@ -8,7 +8,11 @@ themeToggle?.addEventListener("click", () => {
   const currentTheme = document.documentElement.dataset.theme;
   const nextTheme = currentTheme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = nextTheme;
-  localStorage.setItem("theme", nextTheme);
+  try {
+    localStorage.setItem("theme", nextTheme);
+  } catch {
+    // Keep theme switching functional even when storage is unavailable.
+  }
 });
 
 menuToggle?.addEventListener("click", () => {
